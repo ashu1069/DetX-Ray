@@ -15,7 +15,6 @@ from tensorflow.keras.applications.inception_v3 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing.image import load_img
 from keras import backend as K
-import cv2
 from PIL import Image
 from io import BytesIO
 import pandas as pd
