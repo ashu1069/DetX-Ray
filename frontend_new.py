@@ -104,11 +104,11 @@ elif page=="Covid & Pneumonia Classifier":
         st.write("Classifying now...")
         label = classify_covid(img, 'Covid-DenseNet121.h5')
         if label == 0:
-            st.header("X-ray image has Normal")
+            st.header("X-ray scan is Normal")
         elif label==1:
-            st.header("X-Ray scan is Pneumonia")
+            st.header("X-Ray scan has Pneumonia")
         else:
-            st.header("X-Ray has Covid")
+            st.header("X-Ray scan has Covid")
 
         # model1=tf.keras.models.load_model('Covid-DenseNet121.h5')
         # img_test = np.array(img.resize((224,224)))
