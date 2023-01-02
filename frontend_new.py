@@ -42,18 +42,11 @@ else:
 
 
 if page=="Home":
-    # st.warning("If you are visiting for the first time, please consider registeing yourself. You can register yourself from choosing the appropriate action on the left sidebar")
-    # st.markdown(""" ## About us <br>
-    # CogXRLabs is a For-profit Social Enterprise with an aim to commence Healthcare 4.0 in India. It is a confluence of state-of-the-art cutting-edge technologies including, but not limited to, AI (Machine Learning and Deep Learning), Extended Reality (Virtual, Augmented and Mixed), and Brain Computer Interfaces. <br>
-    # ## Vision <br>
-    # Our vision is to introduce improved, transformational suite of products and expert services that address the current challenges faced by the healthcare industry in India. The aim is to commence the era of Healthcare 4.0 by providing patients with better, more value-added, and more cost-effective healthcare services while also improving the industry's efficacy and efficiency.
-    # """,True)
     st.write("DetX-Ray is a web application to provide primal checkup of your X-Ray if it has Covid, Pneumonia, or just Normal")
     st.write("Upload the X-Ray image and get your results within seconds!")
     
     
 elif page=="Register":
-    #st.set_page_config("Register", layout='centered',page_icon = ":clipboard:")
 
     st.title("Registration Form")
 
@@ -110,27 +103,3 @@ elif page=="Covid & Pneumonia Classifier":
         else:
             st.header("X-Ray scan has Covid")
 
-        # model1=tf.keras.models.load_model('Covid-DenseNet121.h5')
-        # img_test = np.array(img.resize((224,224)))
-        # img_test = np.expand_dims(img_test, axis=0)
-        # st.write(img_test.shape)
-        # preds = model1.predict(img_test)
-        # class_idx = np.argmax(preds)
-        # # class_output = model1.output[:, class_idx]
-        # # last_conv_layer = model1.get_layer('conv5_block16_concat')
-
-        # st.write(class_idx)
-        # grads = K.gradients(class_output, last_conv_layer.output)[0]
-        # # grads = K.gradients(class_output, last_conv_layer.output)[0]
-        # pooled_grads = K.mean(grads, axis=(0, 1, 2))
-        # iterate = K.function([model1.input], [pooled_grads, last_conv_layer.output[0]])
-        # pooled_grads_value, conv_layer_output_value = iterate([x])
-        # for i in range(1024):
-        #     conv_layer_output_value[:, :, i] *= pooled_grads_value[i]
-        # # i=np.where(preds>0.5,1,0)
-        # # i.flatten()
-        
-        # heatmap = np.mean(conv_layer_output_value, axis=-1)
-        # heatmap = np.maximum(heatmap, 0)
-        # heatmap /= np.max(heatmap)
-        # st.write(heatmap.shape)
