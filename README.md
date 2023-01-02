@@ -4,3 +4,6 @@ DetX-Ray is a web application to provide primal checkup of your X-Ray if it has 
 
 **Dataset:**
 [Chest X-Ray](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
+
+**Web Application:**
+[DetX-Ray](https://detx-ray.streamlit.app/)
